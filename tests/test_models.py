@@ -9,8 +9,10 @@ class TestModels(unittest.TestCase):
         self.assertEqual(author.name, "John Doe")
 
     def test_article_creation(self):
-        article = Article(1, "Test Title", "Test Content", 1, 1)
+    # Adjust the instantiation to match the constructor signature
+        article = Article(id=1, author_id=1, magazine_id=1, title="Test Title")
         self.assertEqual(article.title, "Test Title")
+
 
     def test_magazine_creation(self):
         magazine = Magazine(1, "Tech Weekly")
