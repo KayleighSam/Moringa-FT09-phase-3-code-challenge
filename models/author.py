@@ -68,10 +68,3 @@ class Author:
         if not value or not isinstance(value, str):
             raise ValueError(f"{field_name} must be a valid string.")
 
-# Example Usage
-# Author.create("John Doe")
-# authors = Author.list_all()
-# for author in authors:
-#     print(author.name)
-# Author.update(1, "Jane Doe")
-# Author.delete(1)

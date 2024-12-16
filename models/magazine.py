@@ -81,10 +81,3 @@ class Magazine:
         if not value or not isinstance(value, str):
             raise ValueError(f"{field_name} must be a valid string.")
 
-# Example Usage
-# Magazine.create("Tech Today", "Technology")
-# magazines = Magazine.list_all()
-# for magazine in magazines:
-#     print(magazine.name, magazine.category)
-# Magazine.update(1, "Tech Weekly", "Tech")
-# Magazine.delete(1)
